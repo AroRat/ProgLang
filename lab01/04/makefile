@@ -1,6 +1,6 @@
-all : main
-main : message.o hello.o goodbye.o main.o
-		g++ message.o hello.o goodbye.o main.o -o main
+all : main.exe
+main.exe : message.o hello.o goodbye.o main.o
+		g++ message.o hello.o goodbye.o main.o -o main.exe
 message.o : message.cpp message.h
 		g++ -c -std=c++11 -o message.o message.cpp
 hello.o : hello.cpp hello.h message.h
