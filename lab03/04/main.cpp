@@ -6,5 +6,5 @@ int main() {
     auto a = x & y;
     std::cout << "x & y: " << typeid(a).name() << std::endl;
     auto b = x && y;
-    std::cout << "x && y: " << typeid(b).name() << std::endl;
+    std::cout << "x && y: " << typeid(b).name();
 }
